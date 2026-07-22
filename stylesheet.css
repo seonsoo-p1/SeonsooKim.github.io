@@ -477,8 +477,8 @@ a:focus-visible {
 .site-footer {
   display: flex;
   gap: 20px;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: space-between;
   margin-top: 42px;
   padding-top: 18px;
   color: #7a828b;
@@ -488,6 +488,23 @@ a:focus-visible {
 
 .site-footer p {
   margin: 0;
+}
+
+.footer-copy {
+  min-width: 0;
+}
+
+.visitor-map {
+  width: 80px;
+  height: 40px;
+  flex: 0 0 80px;
+  overflow: hidden;
+  border-radius: 3px;
+  opacity: 0.82;
+}
+
+.visitor-map > span {
+  margin-right: 0 !important;
 }
 
 @media (max-width: 800px) {
@@ -603,11 +620,7 @@ a:focus-visible {
   }
 
   .site-footer {
-    display: block;
-  }
-
-  .site-footer p + p {
-    margin-top: 6px;
+    gap: 14px;
   }
 }
 
