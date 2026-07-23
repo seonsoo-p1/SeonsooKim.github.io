@@ -259,6 +259,18 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.pub-author-link {
+  color: inherit;
+  text-decoration-color: rgba(32, 91, 75, 0.4);
+  text-underline-offset: 0.14em;
+}
+
+.pub-author-link:hover,
+.pub-author-link:focus-visible {
+  color: var(--link);
+  text-decoration-color: currentColor;
+}
+
 .pub-authors sup {
   position: relative;
   top: -0.1em;
