@@ -531,17 +531,26 @@ a:focus-visible {
   min-width: 0;
 }
 
-.visitor-map {
-  width: 80px;
-  height: 40px;
-  flex: 0 0 80px;
-  overflow: hidden;
-  border-radius: 3px;
-  opacity: 0.82;
+.visitor-counter {
+  flex: 0 0 auto;
+  max-width: 100%;
+  text-align: right;
 }
 
-.visitor-map > span {
-  margin-right: 0 !important;
+.visitor-counter a {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.visitor-counter img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visitor-counter-note {
+  font-size: 0.7rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 800px) {
@@ -666,7 +675,12 @@ a:focus-visible {
   }
 
   .site-footer {
+    flex-wrap: wrap;
     gap: 14px;
+  }
+
+  .visitor-counter {
+    text-align: left;
   }
 }
 
